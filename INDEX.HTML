@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYRAA FINANCIAL & TAX ADVISORS</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{background:#f4f6f9;color:#333}
+header{background:#0d47a1;color:#fff;padding:10px 50px;display:flex;justify-content:space-between;align-items:center;position:fixed;width:100%;z-index:1000}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:50px;height:50px;border-radius:50%;object-fit:cover;border:2px solid #fff}
+header h1{font-size:22px}
+nav a{color:#fff;text-decoration:none;margin-left:20px;font-weight:500}
+.hero{height:100vh;background:url('https://images.unsplash.com/photo-1554224155-8d04cb21cd6c') center/cover no-repeat;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px}
+.hero-content{background:rgba(0,0,0,0.65);padding:40px;border-radius:10px;max-width:700px}
+.hero h2{font-size:40px;margin-bottom:20px}
+.hero p{margin-bottom:25px}
+.btn{display:inline-block;background:#ff9800;color:#fff;padding:12px 25px;border-radius:30px;text-decoration:none;font-weight:600}
+section{padding:80px 50px}
+.section-title{text-align:center;margin-bottom:50px}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#fff;padding:25px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:0.3s}
+.card:hover{transform:translateY(-5px)}
+.card img{width:60px;margin-bottom:15px}
+.about{display:flex;flex-wrap:wrap;align-items:center;gap:40px}
+.about img{width:100%;max-width:450px;border-radius:10px}
+.about-text{flex:1}
+.contact{background:#0d47a1;color:#fff}
+.contact-info{margin-bottom:30px}
+form input, form textarea{width:100%;padding:12px;margin-bottom:15px;border:none;border-radius:5px}
+form button{background:#ff9800;border:none;padding:12px 25px;border-radius:25px;color:#fff;font-weight:600;cursor:pointer}
+footer{background:#111;color:#fff;text-align:center;padding:20px}
+.whatsapp-float{position:fixed;width:60px;height:60px;bottom:25px;right:25px;background:#25D366;color:#fff;border-radius:50%;text-align:center;font-size:30px;box-shadow:2px 2px 10px rgba(0,0,0,0.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.whatsapp-float:hover{background:#1ebe5d}
+@media(max-width:768px){header{padding:15px 20px}.hero h2{font-size:28px}}
+</style>
+</head>
+<body>
+
+<header>
+<div class="logo">
+<img src="logo.png" alt="Radha Krishna Logo">
+<h1>MYRAA FINANCIAL & TAX ADVISORS</h1>
+</div>
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<h2>Professional Tax & Business Consultancy</h2>
+<p>Income Tax, GST, Company Registration & Complete Business Compliance Services in Bhopal.</p>
+<a href="#contact" class="btn">Book Free Consultation</a>
+</div>
+</section>
+
+<section id="about">
+<h2 class="section-title">About MYRAA FINANCIAL & TAX ADVISORS</h2>
+<div class="about">
+<img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85" alt="Office">
+<div class="about-text">
+<p>MYRAA FINANCIAL & TAX ADVISORS provides reliable and professional taxation and business consultancy services. We specialize in Income Tax Return filing, GST compliance, MSME registration, company incorporation, loan consultancy and financial advisory services.</p>
+<br>
+<p>Our mission is to simplify legal compliance and help businesses grow confidently.</p>
+</div>
+</div>
+</section>
+
+<section id="services">
+<h2 class="section-title">Our Services</h2>
+<div class="services">
+<div class="card"><img src="https://img.icons8.com/color/96/tax.png"/><h4>Income Tax Return Filing</h4></div>
+<div class="card"><img src="https://img.icons8.com/color/96/calculator.png"/><h4>GST Registration & Filing</h4></div>
+<div class="card"><img src="https://img.icons8.com/color/96/business.png"/><h4>Company & Firm Registration</h4></div>
+<div class="card"><img src="https://img.icons8.com/color/96/accounting.png"/><h4>Accounting & Bookkeeping</h4></div>
+<div class="card"><img src="https://img.icons8.com/color/96/loan.png"/><h4>Loan Consultancy & MSME Loan</h4></div>
+<div class="card"><img src="https://img.icons8.com/color/96/insurance.png"/><h4>Insurance & Project Reports</h4></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<h2 class="section-title">Contact Us</h2>
+<div class="contact-info">
+<p><strong>Phone:</strong> <a href="https://wa.me/917089112801" target="_blank" style="color:white;text-decoration:underline;">+91 70891 12801 (WhatsApp)</a></p>
+<p><strong>Email:</strong> kushthakur803@gmail.com</p>
+<p><strong>Location:</strong> Bhopal, Madhya Pradesh, India</p>
+</div>
+<form action="https://formsubmit.co/kushthakur803@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Enquiry from Website">
+<input type="hidden" name="_next" value="thankyou.html">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Your Phone Number" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send Enquiry</button>
+</form>
+</section>
+
+<footer>
+<p>© 2026 MYRAA FINANCIAL & TAX ADVISORS | All Rights Reserved</p>
+</footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/917089112801" class="whatsapp-float" target="_blank">💬</a>
+
+</body>
+</html>
