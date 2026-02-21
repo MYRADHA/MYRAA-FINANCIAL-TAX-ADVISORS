@@ -32,6 +32,8 @@ section{padding:80px 50px}
 form input, form textarea{width:100%;padding:12px;margin-bottom:15px;border:none;border-radius:5px}
 form button{background:#ff9800;border:none;padding:12px 25px;border-radius:25px;color:#fff;font-weight:600;cursor:pointer}
 footer{background:#111;color:#fff;text-align:center;padding:20px}
+.whatsapp-float{position:fixed;width:60px;height:60px;bottom:25px;right:25px;background:#25D366;color:#fff;border-radius:50%;text-align:center;font-size:30px;box-shadow:2px 2px 10px rgba(0,0,0,0.3);z-index:100;display:flex;align-items:center;justify-content:center;text-decoration:none}
+.whatsapp-float:hover{background:#1ebe5d}
 @media(max-width:768px){header{padding:15px 20px}.hero h2{font-size:28px}}
 </style>
 </head>
@@ -85,14 +87,18 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 <section class="contact" id="contact">
 <h2 class="section-title">Contact Us</h2>
 <div class="contact-info">
-<p><strong>Phone:</strong> +91 70891 12801</p>
+<p><strong>Phone:</strong> <a href="https://wa.me/917089112801" target="_blank" style="color:white;text-decoration:underline;">+91 70891 12801 (WhatsApp)</a></p>
 <p><strong>Email:</strong> kushthakur803@gmail.com</p>
 <p><strong>Location:</strong> Bhopal, Madhya Pradesh, India</p>
 </div>
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="tel" placeholder="Your Phone Number" required>
-<textarea rows="4" placeholder="Your Message"></textarea>
+<form action="https://formsubmit.co/kushthakur803@gmail.com" method="POST">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Enquiry from Website">
+<input type="hidden" name="_next" value="thankyou.html">
+
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Your Phone Number" required>
+<textarea name="message" rows="4" placeholder="Your Message" required></textarea>
 <button type="submit">Send Enquiry</button>
 </form>
 </section>
@@ -100,6 +106,9 @@ footer{background:#111;color:#fff;text-align:center;padding:20px}
 <footer>
 <p>© 2026 MYRAA FINANCIAL & TAX ADVISORS | All Rights Reserved</p>
 </footer>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/917089112801" class="whatsapp-float" target="_blank">💬</a>
 
 </body>
 </html>
